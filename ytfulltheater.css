@@ -1,38 +1,43 @@
+/* ==UserStyle==
+@name           YouTube Full Theater
+@namespace      userstyles.world
+@version        1.1.0
+==/UserStyle== */
 @-moz-document url-prefix("https://www.youtube.com/watch") {
-ytd-watch-flexy[theater] #player-wide-container.ytd-watch-flexy,
-ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy {
-    height: 100vh;
-    max-height: 100vh;
-}
-    
-ytd-watch-flexy[full-bleed-player] #player-full-bleed-container.ytd-watch-flexy {
-    max-height: 100vh;
-}
+    ytd-watch-flexy[theater] #player-wide-container.ytd-watch-flexy,
+    ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy {
+        height: 100vh;
+        max-height: 100vh;
+    }
 
-ytd-watch[theater] #player.ytd-watch {
-    width: 100%;
-    max-height: 100vh;
-}
+    ytd-watch-flexy[full-bleed-player] #player-full-bleed-container.ytd-watch-flexy {
+        max-height: 100vh;
+    }
 
-#masthead-container.ytd-app {
-    opacity: 0 !important;
-    transition: opacity 0.2s ease-in-out;
-}
+    ytd-watch[theater] #player.ytd-watch {
+        width: 100%;
+        max-height: 100vh;
+    }
 
-#masthead-container.ytd-app:hover {
-    opacity: 1 !important;
-}
+    #masthead-container.ytd-app {
+        opacity: 0 !important;
+        transition: opacity 0.2s ease-in-out;
+    }
 
-/* Hide feedback and restore classic buttons */
-#extra-buttons.ytd-app {
-    display: none !important;
-}
-/* Fix toast interfering with controls */
-#toast.ytd-app:not(.paper-toast-open) {
-    pointer-events: none;
-}
+    #masthead-container.ytd-app:hover {
+        opacity: 1 !important;
+    }
 
-#page-manager.ytd-app {
-    margin-top: 0px;
-}
+    /* Hide feedback and restore classic buttons */
+    #extra-buttons.ytd-app {
+        display: none !important;
+    }
+    /* Fix toast interfering with controls */
+    #toast.ytd-app:not(.paper-toast-open) {
+        pointer-events: none;
+    }
+
+    #page-manager.ytd-app {
+        margin-top: 0px;
+    }
 }
